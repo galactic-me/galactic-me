@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Google Drive</title>
+</head>
+<body>
+<div class="app">
+    <div class="screen join-screen active">
+        <div class="form">
+            <h2>Upload your files</h2>
+            <div class="form-input">
+                <button id="sendershare">Browse</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="screen">
+    <div class="file-input">
+        <label for="file-input">Click here to select files for sharing</label>
+    </div>
+</div>
+<div class="fileslist"></div>
+<div class="title">Shared files</div>
+<div class="item">
+    <div class="project">0%</div>
+</div>
+<script type="text/javascript" src="socket.io/socket.io.js"></script>
+<script type="text/javascript" src="server.js"></script>
+</body>
+</html>

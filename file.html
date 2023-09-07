@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Google Drive</title>
+</head>
+<body>
+   <div class="search-wrapper">
+    <i class="searchbox">search</i>
+    <input type="search" placeholder="Search-drive"/>
+   </div>
+   <ul class="right">
+    <li>
+        <a href="#!">
+            <i class="material-icons grey-text text-darken-1">apps</i>
+        </a>
+    </li>
+    <li>
+        <a href="#!">
+            <i class="material-icons grey-text text-darken-1">notifications</i>
+        </a>
+    </li>
+    <li>
+        <a href="#!">
+            <img src="profile.jpeg" class="circle"/>
+        </a>
+    </li>
+   </ul>
+   <div class="nav-wrapper nav-2">
+    <ul>
+        <li>
+            <button type="button" class="upload">New</button>
+            <ul class="dropdown">
+                <li>New Folder</li>
+                <li>File upload</li>
+                <li>Folder upload</li>
+                <li>Google docs</li>
+                <li>Google Sheets</li>
+                <li>Google slides</li>
+                <li>More</li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="right">
+      <li>
+        <a href="#!"
+          ><i class="material-icons grey-text text-darken-1"
+            >view_list</i
+          ></a
+        >
+      </li>
+      <li>
+        <a href="#!"
+          ><i class="material-icons grey-text text-darken-1">info</i></a
+        >
+      </li>
+      <li>
+        <a href="#!"
+          ><i class="material-icons grey-text text-darken-1"
+            >settings</i
+          ></a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+<ul class="side-nav fixed floating transparent z-depth-0">
+<li class="active">
+  <a href="#"
+    ><i class="material-icons blue-text text-darken-1">dashboard</i>My
+    Drive</a
+  >
+</li>
+<li>
+  <a href="#"><i class="material-icons">devices</i>Computers</a>
+</li>
+<li>
+  <a href="#"><i class="material-icons">people</i>Shared with me</a>
+</li>
+<li>
+  <a href="#"><i class="material-icons">access_time</i>Recent</a>
+</li>
+<li>
+  <a href="#"><i class="material-icons">camera</i>Google Photos</a>
+</li>
+<li>
+  <a href="#"><i class="material-icons">star</i>Starred</a>
+</li>
+<li>
+  <a href="#"><i class="material-icons">delete</i>Trash</a>
+</li>
+<li><div class="divider"></div></li>
+<li>
+  <a href="#"><i class="material-icons">cloud</i>Backup</a>
+</li>
+<li><div class="divider"></div></li>
+<li>
+  <a href="#"><i class="material-icons">storage</i>Upgrade Storage</a>
+</li>
+</ul>
+<div class="main">
+<div class="container-fluid">
+  <p class="subheader">Folders</p>
+  <div class="card-panel folder">
+    <i class="material-icons left">folder</i>Folder
+  </div>
+  <div class="card-panel folder">
+    <i class="material-icons left">folder</i>Folder
+  </div>
+  <div class="card-panel folder">
+    <i class="material-icons left">folder</i>Folder
+  </div>
+  <div class="card-panel folder">
+    <i class="material-icons left">folder</i>Folder
+  </div>
+  <div class="card-panel folder">
+    <i class="material-icons left">folder</i>Folder
+  </div>
+</div>
+</div>
+<div class="app">
+    <div class="screen join-screen active">
+        <div class="form">
+            <h2>Upload your files</h2>
+            <div class="form-input">
+                <button id="sendershare">Browse</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="screen">
+    <div class="file-input">
+        <label for="file-input">Click here to select files for sharing</label>
+    </div>
+</div>
+<div class="fileslist"></div>
+<div class="title">Shared files</div>
+<div class="item">
+    <div class="project">0%</div>
+</div>
+<script type="text/javascript" src="socket.io/socket.io.js"></script>
+<script type="text/javascript" src="server.js"></script>
+</body>
+</html>

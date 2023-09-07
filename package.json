@@ -1,0 +1,17 @@
+{
+  "name": "file_transfer_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "\"Kriti\"",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "request": "^2.88.2",
+    "socket.io": "^4.7.2"
+  }
+}
